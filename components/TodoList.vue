@@ -10,13 +10,13 @@
         hide-details
       >
       </v-text-field>
-      <v-data-table
-        :headers="headers"
-        :items="todos"
-        :search="search"
-      >
-      </v-data-table>
     </v-card-title>
+    <v-data-table
+      :headers="headers"
+      :items="todos"
+      :search="search"
+    >
+    </v-data-table>
   </v-card>
 </template>
 
