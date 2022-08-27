@@ -22,14 +22,9 @@
 
 <script>
 export default {
+  props: ["todos"],
   data() {
     return {
-      todos: [
-        {
-          title: "test",
-          username: "太郎"
-        }
-      ],
       search: "",
       headers: [
         {
