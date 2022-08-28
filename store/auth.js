@@ -10,6 +10,6 @@ export const mutations = {
 
 export const actions = {
   setUser (context, data) {
-    context.commit('serUser', data)
+    context.commit('setUser', data)
   }
 };
