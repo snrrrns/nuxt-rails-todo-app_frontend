@@ -15,7 +15,7 @@
       :items="todos"
       :search="search"
     >
-      <template v-slot:item.action="{ item }">
+      <template v-slot:[`item.action`]="{ item }">
         <v-icon small @click="deleteItem(item)">delete</v-icon>
       </template>
     </v-data-table>
