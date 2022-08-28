@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div v-if="user">
+    <p>名前：{{user.name}}</p>
     <AddTodo @submit="addTodo" />
     <TodoList :todos="todos" />
   </div>
@@ -19,6 +20,11 @@ export default {
     return {
       todos: [],
     };
+  },
+  computed: {
+    user() {
+      return this.$store.state.auth.currentUser;
+    }
   },
   methods: {
     async addTodo(title) {
